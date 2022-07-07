@@ -1,0 +1,15 @@
+/* Language left write */
+html[dir='ltr'].myAppDemoWT.myCustomButton.sapMBtn {
+  margin-right: 0.125rem;
+}
+
+/* Language right write */
+html[dir='rtl'].myAppDemoWT.myCustomButton.sapMBtn {
+  margin-left: 0.125rem;
+}
+
+/* Style Text */
+.myAppDemoWT.myCustomText {
+  display: inline-block;
+  font-weight: bold;
+}
