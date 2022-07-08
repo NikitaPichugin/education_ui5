@@ -1,15 +1,20 @@
 {
   "_version": "1.12.0",
+
   "sap.app": {
     "id": "sap.ui.demo.walkthrough",
     "type": "application",
-    "i18n": "i18n/i18n.properties",
+    "i18n": {
+      "bundleUrl": "i18n/i18n.properties",
+      "supportedLocales": [""]
+    },
     "title": "{{appTitle}}",
     "description": "{{appDescription}}",
     "applicationVersion": {
       "version": "1.0.0"
     }
   },
+
   "sap.ui": {
     "technology": "UI5",
     "deviceTypes": {
@@ -18,6 +23,7 @@
       "phone": true
     }
   },
+
   "sap.ui5": {
     "rootView": {
       "viewName": "sap.ui.demo.walkthrough.view.App",
@@ -39,11 +45,18 @@
           "supportedLocales": [""],
           "fallbackLocale": ""
         }
+      },
+
+      "invoice": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "Invoices.json"
       }
     },
+
     "resources": {
       "css": [{ "uri": "css/style.css" }]
     },
+
     "contentDensities": {
       "compact": false,
       "cozy": false

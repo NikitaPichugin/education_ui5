@@ -6,9 +6,10 @@
   <Shell>
     <App class = "myAppDemoWT">
         <pages>
-          <Page title="SAPUI5 {i18n>homePageTitle}">
+          <Page title="{i18n>homePageTitle}">
               <content>
                 <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.HelloPanel"/>
+                <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.InvoiceList"/>
               </content>
           </Page>
         </pages>
